@@ -5,5 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>forms</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Tech Space გამოკითხვა</h1>
+    <form>
+      <label for="username">თქვენი სახელი</label>
+      <input type="text" id="username" placeholder="აკრიფეთ თქვენი სახელი" />
+      <br />
+      <label for="email">თქვენი ი-მეილი</label>
+      <input type="email" id="email" placeholder="თქვენი ი-მეილი" />
+      <br />
+
+      <h3>გაუწევდით თუ არა მეგობარს Tech Space-ის რეკომენდაციას?</h3>
+      <input type="radio" id="დიახ" value="დიახ" name="opinion" />
+      <label for="დიახ">დიახ</label>
+      <input type="radio" id="არა," value="არა" name="opinion" />
+      <label for="არა">არა</label>
+      <input
+        type="radio"
+        id="არ ვარ დარწმუნებული"
+        value="არ ვარ დარწმუნებული"
+        name="opinion"
+      />
+      <label for="არ ვარ დარწმუნებული">არ ვარ დარწმუნებული</label>
+      <br />
+      <h3>რომელი კურსის გავლას ისურვებდით Tech Space-ზე?</h3>
+      <input type="checkbox" id="HTML" value="HTML" />
+      <label for="HTML">HTML</label>
+      <input type="checkbox" id="CSS" value="CSS" />
+      <label for="CSS">CSS</label>
+      <input type="checkbox" id="Python" value="Python" />
+      <label for="Python">Python</label>
+      <br />
+      <h3>მიუთითეთ თქვენი სტატუსი</h3>
+      <select name="თქვენი სტატუსი" id="თქვენი სტატუსი">
+        <option value="">მოსწავლე</option>
+        <option value="">სტუდენტი</option>
+        <option value="">დასაქმებული</option>
+        <option value="">უმუშევარი</option>
+      </select>
+
+      <br />
+      <br />
+
+      <label for="about">გვითხარით თქვენი შენიშვნების შესახებ</label>
+      <textarea
+        cols="24"
+        rows="6"
+        id="about"
+        placeholder="გვითხარით თქვენი შენიშვნების შესახებ"
+      >
+      </textarea>
+      <br />
+      <br />
+      <button type="submit">ატვირთვა</button>
+    </form>
+  </body>
 </html>
